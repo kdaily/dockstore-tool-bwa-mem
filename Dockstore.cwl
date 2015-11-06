@@ -66,7 +66,7 @@ requirements:
     - envName: "PATH"
       envValue: "/usr/local/bin/:/usr/bin:/bin"
   - class: DockerRequirement
-    dockerPull: quay.io/collaboratory/dockstore-tool-bwa-aln
+    dockerPull: quay.io/collaboratory/dockstore-tool-bwa-mem
 
 inputs:
   - id: "#reference"
