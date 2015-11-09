@@ -66,7 +66,7 @@ requirements:
     dockerPull: quay.io/collaboratory/dockstore-tool-bwa-mem
 
 inputs:
-  - id: "#reference"
+  - id: "#prefix"
     type: File
     inputBinding:
       position: 2
@@ -89,28 +89,10 @@ inputs:
            }
 
 
-  - id: "#reads"
-    type:
-      type: array
-      items: File
+  - id: "#input"
+    type: File
     inputBinding:
-      position: 3
-
-  - id: "#minimum_seed_length"
-    type: int
-    description: "-k INT        minimum seed length [19]"
-    inputBinding:
-      position: 1
-      prefix: "-k"
-
-  - id: "#min_std_max_min"
-    type:
-      type: array
-      items: int
-    inputBinding:
-      position: 1
-      prefix: "-I"
-      itemSeparator: ","
+      position: 5
 
   - id: "#output_name"
     type: string
@@ -123,7 +105,7 @@ inputs:
       prefix: "-t"
 
 outputs:
-  - id: "#sam"
+  - id: "#output"
     type: File
     outputBinding:
       glob:

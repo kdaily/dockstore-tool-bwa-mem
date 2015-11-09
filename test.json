@@ -3,7 +3,7 @@
         "class": "File",
         "path": "test.fastq"
     },
-    "reference": {
+    "prefix": {
         "class": "File",
         "path": "hg19.fa"
     },
