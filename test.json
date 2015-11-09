@@ -9,7 +9,7 @@
     },
     "output": {
         "class": "File",
-        "path": "test.sai"
+        "path": "test.sam"
     },
-    "output_name": "test.sai"
+    "output_name": "test.sam"
 }
