@@ -55,6 +55,11 @@ description: |
 
   Note: Please read the man page for detailed description of the command line and options.
 
+dct:creator:
+  "@id": "http://orcid.org/0000-0002-7681-6415"
+  foaf:name: Brian O'Connor
+  foaf:mbox: "mailto:briandoconnor@gmail.com"
+
 requirements:
   - class: ExpressionEngineRequirement
     id: "#node-engine"
