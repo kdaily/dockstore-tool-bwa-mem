@@ -12,4 +12,4 @@ WORKDIR /
 RUN cp ./${NAME}-${VERSION}/${NAME} ./ 
 RUN strip ${NAME}
 ENV PATH /:$PATH
-ENTRYPOINT ["bwa", "mem"]
+CMD ["bwa", "mem"]

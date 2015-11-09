@@ -1,0 +1,15 @@
+{
+    "input": {
+        "class": "File",
+        "path": "test.fastq"
+    },
+    "reference": {
+        "class": "File",
+        "path": "hg19.fa"
+    },
+    "output": {
+        "class": "File",
+        "path": "test.sai"
+    },
+    "output_name": "test.sai"
+}
