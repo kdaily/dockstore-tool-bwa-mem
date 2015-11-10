@@ -56,9 +56,9 @@ description: |
   Note: Please read the man page for detailed description of the command line and options.
 
 dct:creator:
-  "@id": "http://orcid.org/0000-0002-7681-6415"
-  foaf:name: Brian O'Connor
-  foaf:mbox: "mailto:briandoconnor@gmail.com"
+  "@id": "http://orcid.org/orcid.org/0000-0002-6130-1021"
+  foaf:name: Denis Yuen
+  foaf:mbox: "mailto:help@cancercollaboratory.org"
 
 requirements:
   - class: ExpressionEngineRequirement
