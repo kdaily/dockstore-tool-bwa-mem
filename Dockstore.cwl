@@ -1,7 +1,7 @@
 #!/usr/bin/env cwl-runner
 
 class: CommandLineTool
-cwlVersion: draft-3
+cwlVersion: v1.0 
 
 description: |
   Usage: bwa mem [options] <idxbase> <in1.fq> [in2.fq]
@@ -69,11 +69,10 @@ dct:creator:
 dct:description: "Developed at Cincinnati Children’s Hospital Medical Center for the CWL consortium http://commonwl.org/ Original URL: https://github.com/common-workflow-language/workflows"
 
 requirements:
-  - class: DockerRequirement
-    dockerPull: quay.io/collaboratory/dockstore-tool-bwa-mem:0.3
+    dockerPull: quay.io/collaboratory/dockstore-tool-bwa-mem:1.0
 
 inputs:
-  - id: "#prefix"
+  prefix:
     type: File
     inputBinding:
       position: 2
@@ -88,23 +87,23 @@ inputs:
       - ".rsa"
 
 
-  - id: "#input"
+  input:
     type: File
     inputBinding:
       position: 5
 
-  - id: "#output_name"
+  output_name:
     type: string
 
-  - id: "#threads"
-    type: ["null",int]
+  threads:
+    type: int?
     description: "-t INT        number of threads [1]"
     inputBinding:
       position: 1
       prefix: "-t"
 
 outputs:
-  - id: "#output"
+  output:
     type: File
     outputBinding:
       glob: $(inputs.output_name)
