@@ -70,7 +70,7 @@ dct:description: "Developed at Cincinnati Children’s Hospital Medical Center f
 
 requirements:
   - class: DockerRequirement
-    dockerPull: quay.io/collaboratory/dockstore-tool-bwa-mem:draft-3
+    dockerPull: quay.io/collaboratory/dockstore-tool-bwa-mem:0.3
 
 inputs:
   - id: "#prefix"
