@@ -57,6 +57,11 @@ description: |
   Note: Please read the man page for detailed description of the command line and options.
 
 dct:contributor:
+  "@id": "http://orcid.org/orcid.org/0000-0001-5729-7376"
+  foaf:name: Kenneth Daily
+  foaf:mbox: "mailto:kenneth.daily@sagebionetworks.org"
+
+dct:contributor:
   "@id": "http://orcid.org/orcid.org/0000-0002-6130-1021"
   foaf:name: Denis Yuen
   foaf:mbox: "mailto:help@cancercollaboratory.org"
@@ -70,7 +75,7 @@ dct:description: "Developed at Cincinnati Children’s Hospital Medical Center f
 
 requirements:
   - class: DockerRequirement
-    dockerPull: quay.io/collaboratory/dockstore-tool-bwa-mem:1.0
+    dockerPull: quay.io/kdaily/dockstore-tool-bwa-mem:2.0
 
 inputs:
   prefix:
