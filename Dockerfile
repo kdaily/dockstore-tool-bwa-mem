@@ -1,6 +1,6 @@
 FROM ubuntu:15.04
 MAINTAINER Collaboratory@OICR 
-ENV VERSION=0.7.12
+ENV VERSION=0.7.17
 ENV NAME=bwa
 ENV URL=https://github.com/lh3/bwa/archive/${VERSION}.tar.gz
 RUN apt-get update && apt-get install -y wget make g++ zlib1g-dev python
