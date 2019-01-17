@@ -1,11 +1,11 @@
-FROM ubuntu:15.04
+FROM ubuntu:16.04
 MAINTAINER Collaboratory@OICR 
 ENV VERSION=0.7.17
 ENV NAME=bwa
-ENV URL=https://github.com/lh3/bwa/archive/${VERSION}.tar.gz
-RUN apt-get update && apt-get install -y wget make g++ zlib1g-dev python
-RUN wget -q -O ${NAME}.tar.gz $URL 
-RUN tar -zxvf ${NAME}.tar.gz 
+ENV URL=https://github.com/lh3/bwa/releases/download/v${VERSION}/${NAME}-${VERSION}.tar.bz2
+RUN apt-get update && apt-get install -y wget make g++ zlib1g-dev python bzip2
+RUN wget -q -O ${NAME}.tar.bz2 ${URL}
+RUN tar -xvjf ${NAME}.tar.bz2
 WORKDIR /${NAME}-${VERSION} 
 RUN make -j 4 
 WORKDIR /
