@@ -93,10 +93,15 @@ inputs:
       - ".rsa"
 
 
-  input:
+  input1:
     type: File
     inputBinding:
       position: 5
+
+  input2:
+    type: File
+    inputBinding:
+      position: 6
 
   output_name:
     type: string
