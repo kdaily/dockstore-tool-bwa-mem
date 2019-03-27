@@ -1,5 +1,9 @@
 {
-    "input": {
+    "input1": {
+        "class": "File",
+        "path": "test.fastq"
+    },
+    "input2": {
         "class": "File",
         "path": "test.fastq"
     },
